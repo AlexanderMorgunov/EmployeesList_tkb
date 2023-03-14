@@ -1,0 +1,44 @@
+.Layout_wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Layout_header {
+  width: 100%;
+  background-color: #00b9cd;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+.Layout_search_wrapper {
+  width: calc(100% - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Layout_search_input {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid;
+  text-align: center;
+}
+.Layout_footer {
+  width: 100vw;
+  height: 8vh;
+  background-color: #00b9cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_github_icon {
+  font-size: 25px;
+  margin: 5px;
+}
+.Layout_content {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
