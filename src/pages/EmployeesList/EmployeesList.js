@@ -9,8 +9,6 @@ const EmployeesList = () => {
   const { search } = useContext(SearchContext);
   const { state } = useLocation();
 
-  console.log(state);
-
   const handleDelete = (id) => {
     setEmployees((Employees) => Employees.filter((el) => el.id !== id));
   };
@@ -43,7 +41,7 @@ const EmployeesList = () => {
         </thead>
         <tbody>
           {content.map((el) => (
-            <tr>
+            <tr key={el.id}>
               <td>{el.name}</td>
               <td>{el.position}</td>
               <td>{el.age}</td>
